@@ -1,0 +1,237 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN"
+    "http://www.w3.org/TR/1998/REC-html40-19980424/loose.dtd">
+<html><head>
+    <title>MPSettingCenter</title>
+	<meta http-equiv="refresh" content="0;http://www.terntek.com" />
+<meta http-equiv="Content-Type" content="text/html; charset=utf8" />
+ <meta name="generator" content="HeaderDoc" />
+<meta name="xcode-display" content="render" />
+<style><!--
+#tocMenu {
+		display: block;
+		position:fixed;
+		top:0px;
+		left:0px;
+		width:210px;
+		height:100%;
+		background:transparent;
+}
+#bodyText {
+		margin-left: 210px;
+}
+--></style>
+<script language="JavaScript" type="text/javascript"><!--
+function hidetoc() {
+	var origURL = parent.document.URL;
+	var contentURL = origURL.substring(origURL.indexOf('?')+1, origURL.length);
+	if (contentURL.length == origURL.length) {
+		jumpPos = origURL.substring(origURL.indexOf('#')+1, origURL.length);
+	}
+	if (contentURL == "hidetoc") {
+		var toc = document.getElementById('tocMenu');
+		var body = document.getElementById('bodyText');
+		if (toc && body) {
+			toc.style.display = 'none';
+			body.style.marginLeft = '0px';
+		}
+	}
+}
+--></script>
+<style type="text/css"><!--.keyword {background:#ffffff; color:#761550;}.template {background:#ffffff; color:#761550;}.number {background: #ffffff; color:#0000ff;}.function {background:#ffffff; color:#000000;}.string {background: #ffffff; color:#891315;}.preprocessor {background:#ffffff; color:#236e25}.comment {background:#ffffff; color:#236e25}.char {background: #ffffff; color:#0000ff;}.var {background:#ffffff; color:#000000;}.type {background:#ffffff; color:#761550;}.param {background:#ffffff; color:#000000;}a:link {text-decoration: none; font-family: lucida grande, geneva, helvetica, arial, sans-serif; font-size: small; color: #0000ff;}a:visited {text-decoration: none; font-family: lucida grande, geneva, helvetica, arial, sans-serif; font-size: small; color: #0000ff;}a:visited:hover {text-decoration: underline; font-family: lucida grande, geneva, helvetica, arial, sans-serif; font-size: small; color: #ff6600;}a:active {text-decoration: none; font-family: lucida grande, geneva, helvetica, arial, sans-serif; font-size: small; color: #ff6600;}a:hover {text-decoration: underline; font-family: lucida grande, geneva, helvetica, arial, sans-serif; font-size: small; color: #ff6600;}h4 {text-decoration: none; font-family: lucida grande, geneva, helvetica, arial, sans-serif; font-size: tiny; font-weight: bold;}body {text-decoration: none; font-family: lucida grande, geneva, helvetica, arial, sans-serif; font-size: 10pt;}.list_indent { margin-left: 40px; }.declaration_indent { margin-left: 40px; }.param_indent { margin-left: 40px; }.group_indent { margin-left: 40px; }.group_desc_indent { margin-left: 20px; }.warning_indent { margin-left: 40px; }.important_indent { margin-left: 40px; }.hd_tocAccess { font-style: italic; font-size: 10px; font-weight: normal; color: #303030; }--></style></head><body bgcolor="#ffffff" onload="hidetoc();">
+</div>
+<!-- headerDoc=Header;  uid=//apple_ref/doc/header/MPSettingCenter.h;   name=MPSettingCenter -->
+<a name="//apple_ref/doc/header/MPSettingCenter.h"></a>
+<div id='tocMenu'>
+<iframe id='toc_content' name='toc_content' SRC='toc.html' width='210' height='100%' align='left' frameborder='0'>This document set is best viewed in a browser that supports iFrames.</iframe>
+</div>
+<div id='bodyText'>
+<a name="top"></a>
+<hr><table border="0"  cellpadding="2" cellspacing="2" width="300"><tr><td valign="top" height="12" colspan="5"><h1><a name="MPSettingCenter">MPSettingCenter</a></h1>
+</td></tr></table><hr><p></p><div class='declaration_indent'>
+</div>
+<h5 class="tight"><font face="Lucida Grande,Helvetica,Arial">Discussion</font>
+</h5><!-- begin discussion -->
+<p>MPSettingCenter provides a interface to all secure and non-secure settings.
+Methods are provided to read, write and configure settings.  MPSettingCenter
+is also responsible for updating setting information to the MP's network
+services.<!-- end discussion -->
+<p></p><dl><dt><i>Updated:</i></dt><dd>星期一, 八月 29, 2011</dd>
+</dl>
+<hr><br><a name='HeaderDoc_groups'><h2>Groups</h2></a>
+
+<h3>network setting IDs</h3>
+<div class='group_desc_indent'>
+<p> </p></div>
+<h4>Group members:</h4>
+<div class='group_indent'>
+<dl>
+<dt><tt><!-- a logicalPath="//apple_ref/c/data/kMPSettingAuthServer" target="_top" -->kMPSettingAuthServer<!-- /a --></tt></dt>
+<dd><p>authentication server hostname </dd>
+<dt><tt><!-- a logicalPath="//apple_ref/c/data/kMPSettingDomainIPAddress" target="_top" -->kMPSettingDomainIPAddress<!-- /a --></tt></dt>
+<dd><p>domain IP - actual IP of connected server </dd>
+<dt><tt><!-- a logicalPath="//apple_ref/c/data/kMPSettingDomainServer" target="_top" -->kMPSettingDomainServer<!-- /a --></tt></dt>
+<dd><p>domain server hostname </dd>
+<dt><tt><!-- a logicalPath="//apple_ref/c/data/kMPSettingNotificationServer" target="_top" -->kMPSettingNotificationServer<!-- /a --></tt></dt>
+<dd><p>notification server hostname </dd>
+</dl>
+</div>
+<p>&nbsp;</p>
+<h3>profile settings IDs</h3>
+<div class='group_desc_indent'>
+<p> </p></div>
+<h4>Group members:</h4>
+<div class='group_indent'>
+<dl>
+<dt><tt><!-- a logicalPath="//apple_ref/c/data/kMPSettingHeadShot" target="_top" -->kMPSettingHeadShot<!-- /a --></tt></dt>
+<dd><p>public headshot </dd>
+<dt><tt><!-- a logicalPath="//apple_ref/c/data/kMPSettingIMEI" target="_top" -->kMPSettingIMEI<!-- /a --></tt></dt>
+<dd><p>unique hardware ID </dd>
+<dt><tt><!-- a logicalPath="//apple_ref/c/data/kMPSettingMPID" target="_top" -->kMPSettingMPID<!-- /a --></tt></dt>
+<dd><p>alternative ID for finding users (instead of phonenumbers) </dd>
+<dt><tt><!-- a logicalPath="//apple_ref/c/data/kMPSettingMPIDSearch" target="_top" -->kMPSettingMPIDSearch<!-- /a --></tt></dt>
+<dd><p>allow MPID to be searched </dd>
+<dt><tt><!-- a logicalPath="//apple_ref/c/data/kMPSettingMSISDN" target="_top" -->kMPSettingMSISDN<!-- /a --></tt></dt>
+<dd><p>country code and phonenumber </dd>
+<dt><tt><!-- a logicalPath="//apple_ref/c/data/kMPSettingNickName" target="_top" -->kMPSettingNickName<!-- /a --></tt></dt>
+<dd><p>name shown to other users </dd>
+<dt><tt><!-- a logicalPath="//apple_ref/c/data/kMPSettingStatus" target="_top" -->kMPSettingStatus<!-- /a --></tt></dt>
+<dd><p>public status </dd>
+</dl>
+</div>
+<p>&nbsp;</p>
+<h3>authentication setting IDs</h3>
+<div class='group_desc_indent'>
+<p> </p></div>
+<h4>Group members:</h4>
+<div class='group_indent'>
+<dl>
+<dt><tt><!-- a logicalPath="//apple_ref/c/data/kMPSettingAuthKey" target="_top" -->kMPSettingAuthKey<!-- /a --></tt></dt>
+<dd><p>authentication key to connect to domain services </dd>
+<dt><tt><!-- a logicalPath="//apple_ref/c/data/kMPSettingUserID" target="_top" -->kMPSettingUserID<!-- /a --></tt></dt>
+<dd><p>unique ID provided by MP Authentication Services </dd>
+</dl>
+</div>
+<hr><a name="HeaderDoc_constants"></a>
+<h2>Constants</h2>
+<dl>
+<dt><tt><a href="index.html#//apple_ref/c/data/kMPSettingAuthKey" target="_top">kMPSettingAuthKey</a></tt></dt>
+<dd><p>authentication key to connect to domain services </dd>
+<dt><tt><a href="index.html#//apple_ref/c/data/kMPSettingAuthServer" target="_top">kMPSettingAuthServer</a></tt></dt>
+<dd><p>authentication server hostname </dd>
+<dt><tt><a href="index.html#//apple_ref/c/data/kMPSettingDomainIPAddress" target="_top">kMPSettingDomainIPAddress</a></tt></dt>
+<dd><p>domain IP - actual IP of connected server </dd>
+<dt><tt><a href="index.html#//apple_ref/c/data/kMPSettingDomainServer" target="_top">kMPSettingDomainServer</a></tt></dt>
+<dd><p>domain server hostname </dd>
+<dt><tt><a href="index.html#//apple_ref/c/data/kMPSettingHeadShot" target="_top">kMPSettingHeadShot</a></tt></dt>
+<dd><p>public headshot </dd>
+<dt><tt><a href="index.html#//apple_ref/c/data/kMPSettingIMEI" target="_top">kMPSettingIMEI</a></tt></dt>
+<dd><p>unique hardware ID </dd>
+<dt><tt><a href="index.html#//apple_ref/c/data/kMPSettingMPID" target="_top">kMPSettingMPID</a></tt></dt>
+<dd><p>alternative ID for finding users (instead of phonenumbers) </dd>
+<dt><tt><a href="index.html#//apple_ref/c/data/kMPSettingMPIDSearch" target="_top">kMPSettingMPIDSearch</a></tt></dt>
+<dd><p>allow MPID to be searched </dd>
+<dt><tt><a href="index.html#//apple_ref/c/data/kMPSettingMSISDN" target="_top">kMPSettingMSISDN</a></tt></dt>
+<dd><p>country code and phonenumber </dd>
+<dt><tt><a href="index.html#//apple_ref/c/data/kMPSettingNickName" target="_top">kMPSettingNickName</a></tt></dt>
+<dd><p>name shown to other users </dd>
+<dt><tt><a href="index.html#//apple_ref/c/data/kMPSettingNotificationServer" target="_top">kMPSettingNotificationServer</a></tt></dt>
+<dd><p>notification server hostname </dd>
+<dt><tt><a href="index.html#//apple_ref/c/data/kMPSettingStatus" target="_top">kMPSettingStatus</a></tt></dt>
+<dd><p>public status </dd>
+<dt><tt><a href="index.html#//apple_ref/c/data/kMPSettingUserID" target="_top">kMPSettingUserID</a></tt></dt>
+<dd><p>unique ID provided by MP Authentication Services </dd>
+</dl>
+<hr><!-- headerDoc=data;  uid=//apple_ref/c/data/kMPSettingAuthKey;   name=kMPSettingAuthKey -->
+<a name="//apple_ref/c/data/kMPSettingAuthKey"></a>
+<table border="0"  cellpadding="2" cellspacing="2" width="300"><tr><td valign="top" height="12" colspan="5"><h3><a name="kMPSettingAuthKey">kMPSettingAuthKey</a></h3>
+</td></tr></table><hr><p><!-- begin abstract --><p>authentication key to connect to domain services <!-- end abstract --></p>
+<p></p><div class='declaration_indent'>
+<pre><span class="keyword">const</span> <!-- a logicalPath="//apple_ref/c/econst/CFStringRef //apple_ref/c/data/CFStringRef" --><span class="var">CFStringRef</span><!-- /a --> <!-- a logicalPath="//apple_ref/c/econst/kMPSettingAuthKey //apple_ref/c/data/kMPSettingAuthKey" --><span class="var">kMPSettingAuthKey</span><!-- /a --> = (<!-- a logicalPath="//apple_ref/c/econst/CFStringRef //apple_ref/c/data/CFStringRef" --><span class="var">CFStringRef</span><!-- /a -->)@"<!-- a logicalPath="//apple_ref/c/econst/kMPSettingAuthKey //apple_ref/c/data/kMPSettingAuthKey" --><span class="var">kMPSettingAuthKey</span><!-- /a -->";  </pre>
+</div>
+<p></p><hr><!-- headerDoc=data;  uid=//apple_ref/c/data/kMPSettingAuthServer;   name=kMPSettingAuthServer -->
+<a name="//apple_ref/c/data/kMPSettingAuthServer"></a>
+<table border="0"  cellpadding="2" cellspacing="2" width="300"><tr><td valign="top" height="12" colspan="5"><h3><a name="kMPSettingAuthServer">kMPSettingAuthServer</a></h3>
+</td></tr></table><hr><p><!-- begin abstract --><p>authentication server hostname <!-- end abstract --></p>
+<p></p><div class='declaration_indent'>
+<pre><span class="keyword">const</span> <!-- a logicalPath="//apple_ref/c/econst/CFStringRef //apple_ref/c/data/CFStringRef" --><span class="var">CFStringRef</span><!-- /a --> <!-- a logicalPath="//apple_ref/c/econst/kMPSettingAuthServer //apple_ref/c/data/kMPSettingAuthServer" --><span class="var">kMPSettingAuthServer</span><!-- /a --> = (<!-- a logicalPath="//apple_ref/c/econst/CFStringRef //apple_ref/c/data/CFStringRef" --><span class="var">CFStringRef</span><!-- /a -->)@"<!-- a logicalPath="//apple_ref/c/econst/kMPSettingAuthServer //apple_ref/c/data/kMPSettingAuthServer" --><span class="var">kMPSettingAuthServer</span><!-- /a -->";  </pre>
+</div>
+<p></p><hr><!-- headerDoc=data;  uid=//apple_ref/c/data/kMPSettingDomainIPAddress;   name=kMPSettingDomainIPAddress -->
+<a name="//apple_ref/c/data/kMPSettingDomainIPAddress"></a>
+<table border="0"  cellpadding="2" cellspacing="2" width="300"><tr><td valign="top" height="12" colspan="5"><h3><a name="kMPSettingDomainIPAddress">kMPSettingDomainIPAddress</a></h3>
+</td></tr></table><hr><p><!-- begin abstract --><p>domain IP - actual IP of connected server <!-- end abstract --></p>
+<p></p><div class='declaration_indent'>
+<pre><span class="keyword">const</span> <!-- a logicalPath="//apple_ref/c/econst/CFStringRef //apple_ref/c/data/CFStringRef" --><span class="var">CFStringRef</span><!-- /a --> <!-- a logicalPath="//apple_ref/c/econst/kMPSettingDomainIPAddress //apple_ref/c/data/kMPSettingDomainIPAddress" --><span class="var">kMPSettingDomainIPAddress</span><!-- /a --> = (<!-- a logicalPath="//apple_ref/c/econst/CFStringRef //apple_ref/c/data/CFStringRef" --><span class="var">CFStringRef</span><!-- /a -->)@"<!-- a logicalPath="//apple_ref/c/econst/kMPSettingIPAddress //apple_ref/c/data/kMPSettingIPAddress" --><span class="var">kMPSettingIPAddress</span><!-- /a -->";  </pre>
+</div>
+<p></p><hr><!-- headerDoc=data;  uid=//apple_ref/c/data/kMPSettingDomainServer;   name=kMPSettingDomainServer -->
+<a name="//apple_ref/c/data/kMPSettingDomainServer"></a>
+<table border="0"  cellpadding="2" cellspacing="2" width="300"><tr><td valign="top" height="12" colspan="5"><h3><a name="kMPSettingDomainServer">kMPSettingDomainServer</a></h3>
+</td></tr></table><hr><p><!-- begin abstract --><p>domain server hostname <!-- end abstract --></p>
+<p></p><div class='declaration_indent'>
+<pre><span class="keyword">const</span> <!-- a logicalPath="//apple_ref/c/econst/CFStringRef //apple_ref/c/data/CFStringRef" --><span class="var">CFStringRef</span><!-- /a --> <!-- a logicalPath="//apple_ref/c/econst/kMPSettingDomainServer //apple_ref/c/data/kMPSettingDomainServer" --><span class="var">kMPSettingDomainServer</span><!-- /a --> = (<!-- a logicalPath="//apple_ref/c/econst/CFStringRef //apple_ref/c/data/CFStringRef" --><span class="var">CFStringRef</span><!-- /a -->)@"<!-- a logicalPath="//apple_ref/c/econst/kMPSettingDomainServer //apple_ref/c/data/kMPSettingDomainServer" --><span class="var">kMPSettingDomainServer</span><!-- /a -->";  </pre>
+</div>
+<p></p><hr><!-- headerDoc=data;  uid=//apple_ref/c/data/kMPSettingHeadShot;   name=kMPSettingHeadShot -->
+<a name="//apple_ref/c/data/kMPSettingHeadShot"></a>
+<table border="0"  cellpadding="2" cellspacing="2" width="300"><tr><td valign="top" height="12" colspan="5"><h3><a name="kMPSettingHeadShot">kMPSettingHeadShot</a></h3>
+</td></tr></table><hr><p><!-- begin abstract --><p>public headshot <!-- end abstract --></p>
+<p></p><div class='declaration_indent'>
+<pre><span class="keyword">const</span> <!-- a logicalPath="//apple_ref/c/econst/CFStringRef //apple_ref/c/data/CFStringRef" --><span class="var">CFStringRef</span><!-- /a --> <!-- a logicalPath="//apple_ref/c/econst/kMPSettingHeadShot //apple_ref/c/data/kMPSettingHeadShot" --><span class="var">kMPSettingHeadShot</span><!-- /a --> = (<!-- a logicalPath="//apple_ref/c/econst/CFStringRef //apple_ref/c/data/CFStringRef" --><span class="var">CFStringRef</span><!-- /a -->)@"<!-- a logicalPath="//apple_ref/c/econst/kMPSettingHeadShot //apple_ref/c/data/kMPSettingHeadShot" --><span class="var">kMPSettingHeadShot</span><!-- /a -->";  </pre>
+</div>
+<p></p><hr><!-- headerDoc=data;  uid=//apple_ref/c/data/kMPSettingIMEI;   name=kMPSettingIMEI -->
+<a name="//apple_ref/c/data/kMPSettingIMEI"></a>
+<table border="0"  cellpadding="2" cellspacing="2" width="300"><tr><td valign="top" height="12" colspan="5"><h3><a name="kMPSettingIMEI">kMPSettingIMEI</a></h3>
+</td></tr></table><hr><p><!-- begin abstract --><p>unique hardware ID <!-- end abstract --></p>
+<p></p><div class='declaration_indent'>
+<pre><span class="keyword">const</span> <!-- a logicalPath="//apple_ref/c/econst/CFStringRef //apple_ref/c/data/CFStringRef" --><span class="var">CFStringRef</span><!-- /a --> <!-- a logicalPath="//apple_ref/c/econst/kMPSettingIMEI //apple_ref/c/data/kMPSettingIMEI" --><span class="var">kMPSettingIMEI</span><!-- /a --> = (<!-- a logicalPath="//apple_ref/c/econst/CFStringRef //apple_ref/c/data/CFStringRef" --><span class="var">CFStringRef</span><!-- /a -->)@"<!-- a logicalPath="//apple_ref/c/econst/kMPSettingIMEI //apple_ref/c/data/kMPSettingIMEI" --><span class="var">kMPSettingIMEI</span><!-- /a -->";  </pre>
+</div>
+<p></p><hr><!-- headerDoc=data;  uid=//apple_ref/c/data/kMPSettingMPID;   name=kMPSettingMPID -->
+<a name="//apple_ref/c/data/kMPSettingMPID"></a>
+<table border="0"  cellpadding="2" cellspacing="2" width="300"><tr><td valign="top" height="12" colspan="5"><h3><a name="kMPSettingMPID">kMPSettingMPID</a></h3>
+</td></tr></table><hr><p><!-- begin abstract --><p>alternative ID for finding users (instead of phonenumbers) <!-- end abstract --></p>
+<p></p><div class='declaration_indent'>
+<pre><span class="keyword">const</span> <!-- a logicalPath="//apple_ref/c/econst/CFStringRef //apple_ref/c/data/CFStringRef" --><span class="var">CFStringRef</span><!-- /a --> <!-- a logicalPath="//apple_ref/c/econst/kMPSettingMPID //apple_ref/c/data/kMPSettingMPID" --><span class="var">kMPSettingMPID</span><!-- /a --> = (<!-- a logicalPath="//apple_ref/c/econst/CFStringRef //apple_ref/c/data/CFStringRef" --><span class="var">CFStringRef</span><!-- /a -->)@"<!-- a logicalPath="//apple_ref/c/econst/kMPSettingMPID //apple_ref/c/data/kMPSettingMPID" --><span class="var">kMPSettingMPID</span><!-- /a -->";  </pre>
+</div>
+<p></p><hr><!-- headerDoc=data;  uid=//apple_ref/c/data/kMPSettingMPIDSearch;   name=kMPSettingMPIDSearch -->
+<a name="//apple_ref/c/data/kMPSettingMPIDSearch"></a>
+<table border="0"  cellpadding="2" cellspacing="2" width="300"><tr><td valign="top" height="12" colspan="5"><h3><a name="kMPSettingMPIDSearch">kMPSettingMPIDSearch</a></h3>
+</td></tr></table><hr><p><!-- begin abstract --><p>allow MPID to be searched <!-- end abstract --></p>
+<p></p><div class='declaration_indent'>
+<pre><span class="keyword">const</span> <!-- a logicalPath="//apple_ref/c/econst/CFStringRef //apple_ref/c/data/CFStringRef" --><span class="var">CFStringRef</span><!-- /a --> <!-- a logicalPath="//apple_ref/c/econst/kMPSettingMPIDSearch //apple_ref/c/data/kMPSettingMPIDSearch" --><span class="var">kMPSettingMPIDSearch</span><!-- /a --> = (<!-- a logicalPath="//apple_ref/c/econst/CFStringRef //apple_ref/c/data/CFStringRef" --><span class="var">CFStringRef</span><!-- /a -->)@"<!-- a logicalPath="//apple_ref/c/econst/kMPSettingMPIDSearch //apple_ref/c/data/kMPSettingMPIDSearch" --><span class="var">kMPSettingMPIDSearch</span><!-- /a -->";  </pre>
+</div>
+<p></p><hr><!-- headerDoc=data;  uid=//apple_ref/c/data/kMPSettingMSISDN;   name=kMPSettingMSISDN -->
+<a name="//apple_ref/c/data/kMPSettingMSISDN"></a>
+<table border="0"  cellpadding="2" cellspacing="2" width="300"><tr><td valign="top" height="12" colspan="5"><h3><a name="kMPSettingMSISDN">kMPSettingMSISDN</a></h3>
+</td></tr></table><hr><p><!-- begin abstract --><p>country code and phonenumber <!-- end abstract --></p>
+<p></p><div class='declaration_indent'>
+<pre><span class="keyword">const</span> <!-- a logicalPath="//apple_ref/c/econst/CFStringRef //apple_ref/c/data/CFStringRef" --><span class="var">CFStringRef</span><!-- /a --> <!-- a logicalPath="//apple_ref/c/econst/kMPSettingMSISDN //apple_ref/c/data/kMPSettingMSISDN" --><span class="var">kMPSettingMSISDN</span><!-- /a --> = (<!-- a logicalPath="//apple_ref/c/econst/CFStringRef //apple_ref/c/data/CFStringRef" --><span class="var">CFStringRef</span><!-- /a -->)@"<!-- a logicalPath="//apple_ref/c/econst/kMPSettingMSISDN //apple_ref/c/data/kMPSettingMSISDN" --><span class="var">kMPSettingMSISDN</span><!-- /a -->";  </pre>
+</div>
+<p></p><hr><!-- headerDoc=data;  uid=//apple_ref/c/data/kMPSettingNickName;   name=kMPSettingNickName -->
+<a name="//apple_ref/c/data/kMPSettingNickName"></a>
+<table border="0"  cellpadding="2" cellspacing="2" width="300"><tr><td valign="top" height="12" colspan="5"><h3><a name="kMPSettingNickName">kMPSettingNickName</a></h3>
+</td></tr></table><hr><p><!-- begin abstract --><p>name shown to other users <!-- end abstract --></p>
+<p></p><div class='declaration_indent'>
+<pre><span class="keyword">const</span> <!-- a logicalPath="//apple_ref/c/econst/CFStringRef //apple_ref/c/data/CFStringRef" --><span class="var">CFStringRef</span><!-- /a --> <!-- a logicalPath="//apple_ref/c/econst/kMPSettingNickName //apple_ref/c/data/kMPSettingNickName" --><span class="var">kMPSettingNickName</span><!-- /a --> = (<!-- a logicalPath="//apple_ref/c/econst/CFStringRef //apple_ref/c/data/CFStringRef" --><span class="var">CFStringRef</span><!-- /a -->)@"<!-- a logicalPath="//apple_ref/c/econst/kMPSettingNickName //apple_ref/c/data/kMPSettingNickName" --><span class="var">kMPSettingNickName</span><!-- /a -->";  </pre>
+</div>
+<p></p><hr><!-- headerDoc=data;  uid=//apple_ref/c/data/kMPSettingNotificationServer;   name=kMPSettingNotificationServer -->
+<a name="//apple_ref/c/data/kMPSettingNotificationServer"></a>
+<table border="0"  cellpadding="2" cellspacing="2" width="300"><tr><td valign="top" height="12" colspan="5"><h3><a name="kMPSettingNotificationServer">kMPSettingNotificationServer</a></h3>
+</td></tr></table><hr><p><!-- begin abstract --><p>notification server hostname <!-- end abstract --></p>
+<p></p><div class='declaration_indent'>
+<pre><span class="keyword">const</span> <!-- a logicalPath="//apple_ref/c/econst/CFStringRef //apple_ref/c/data/CFStringRef" --><span class="var">CFStringRef</span><!-- /a --> <!-- a logicalPath="//apple_ref/c/econst/kMPSettingNotificationServer //apple_ref/c/data/kMPSettingNotificationServer" --><span class="var">kMPSettingNotificationServer</span><!-- /a --> = (<!-- a logicalPath="//apple_ref/c/econst/CFStringRef //apple_ref/c/data/CFStringRef" --><span class="var">CFStringRef</span><!-- /a -->)@"<!-- a logicalPath="//apple_ref/c/econst/kMPSettingNotificationServer //apple_ref/c/data/kMPSettingNotificationServer" --><span class="var">kMPSettingNotificationServer</span><!-- /a -->";  </pre>
+</div>
+<p></p><hr><!-- headerDoc=data;  uid=//apple_ref/c/data/kMPSettingStatus;   name=kMPSettingStatus -->
+<a name="//apple_ref/c/data/kMPSettingStatus"></a>
+<table border="0"  cellpadding="2" cellspacing="2" width="300"><tr><td valign="top" height="12" colspan="5"><h3><a name="kMPSettingStatus">kMPSettingStatus</a></h3>
+</td></tr></table><hr><p><!-- begin abstract --><p>public status <!-- end abstract --></p>
+<p></p><div class='declaration_indent'>
+<pre><span class="keyword">const</span> <!-- a logicalPath="//apple_ref/c/econst/CFStringRef //apple_ref/c/data/CFStringRef" --><span class="var">CFStringRef</span><!-- /a --> <!-- a logicalPath="//apple_ref/c/econst/kMPSettingStatus //apple_ref/c/data/kMPSettingStatus" --><span class="var">kMPSettingStatus</span><!-- /a --> = (<!-- a logicalPath="//apple_ref/c/econst/CFStringRef //apple_ref/c/data/CFStringRef" --><span class="var">CFStringRef</span><!-- /a -->)@"<!-- a logicalPath="//apple_ref/c/econst/kMPSettingStatus //apple_ref/c/data/kMPSettingStatus" --><span class="var">kMPSettingStatus</span><!-- /a -->";  </pre>
+</div>
+<p></p><hr><!-- headerDoc=data;  uid=//apple_ref/c/data/kMPSettingUserID;   name=kMPSettingUserID -->
+<a name="//apple_ref/c/data/kMPSettingUserID"></a>
+<table border="0"  cellpadding="2" cellspacing="2" width="300"><tr><td valign="top" height="12" colspan="5"><h3><a name="kMPSettingUserID">kMPSettingUserID</a></h3>
+</td></tr></table><hr><p><!-- begin abstract --><p>unique ID provided by MP Authentication Services <!-- end abstract --></p>
+<p></p><div class='declaration_indent'>
+<pre><span class="keyword">const</span> <!-- a logicalPath="//apple_ref/c/econst/CFStringRef //apple_ref/c/data/CFStringRef" --><span class="var">CFStringRef</span><!-- /a --> <!-- a logicalPath="//apple_ref/c/econst/kMPSettingUserID //apple_ref/c/data/kMPSettingUserID" --><span class="var">kMPSettingUserID</span><!-- /a --> = (<!-- a logicalPath="//apple_ref/c/econst/CFStringRef //apple_ref/c/data/CFStringRef" --><span class="var">CFStringRef</span><!-- /a -->)@"<!-- a logicalPath="//apple_ref/c/econst/kMPSettingUserID //apple_ref/c/data/kMPSettingUserID" --><span class="var">kMPSettingUserID</span><!-- /a -->";  </pre>
+</div>
+<p></p><p><p>&#169; TernTek
+ Last Updated: 星期一, 八月 29, 2011
+</p></body></html>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<array>
+	<string>Available</string>
+	<string>Busy</string>
+	<string>At work</string>
+	<string>At school</string>
+	<string>In meeting</string>
+	<string>Sleeping</string>
+	<string>Urgent calls only</string>
+	<string>Chat with me!</string>
+	<string>Need a hug</string>
+</array>
+</plist>

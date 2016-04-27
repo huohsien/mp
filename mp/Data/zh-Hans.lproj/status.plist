@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+    <array>
+        <string>忙碌中</string>
+        <string>看电影中</string>
+        <string>工作中，挣钱要紧</string>
+        <string>装忙中</string>
+        <string>睡觉啰，有事等我醒再说</string>
+        <string>不方便说话，讯息可</string>
+        <string>心情不好中，不想说话</string>
+        <string>运动中，人总是要活动活动</string>
+        <string>只接紧急来电</string>
+    </array>
+</plist>

@@ -1,0 +1,54 @@
+M+ iOS Client
+
+## Directory Structure
+
+Data
+- General text and data files.
+- mplus.der:            Web server certificate.
+- *_dictionary_*:       Language dictionary to collate model data.
+- CountryData.csv:      List of country info for country code selection view.
+- pet_phrase.plist:     Array of default text for pet phrase.
+- status.plist:         List of available status text.
+- tell_friend_*:    Tell a friend templates.
+
+Audio
+- Audio files that are played including ring tones and action sound effects.
+- tap.caf:              Play when emoticon or sticker is tapped.
+- failed.caf:           Play when send message fails.
+- sent.caf:             Play when message is successfully sent.
+- silence.caf:          Play when silence is selected as a ring tone.
+- t1-7*                 Notification/Message ring tones.
+
+Images
+- App icon images.
+
+Classes
+- Client code directory.
+
+CoreData
+- Core Data data model.
+
+Support Files
+- Other build configuration, localization and app icon files.
+
+## Classes Directory
+
+ExtTools
+- External modules integrated into M+.
+
+AppCore
+- M+ specific utilities.
+
+Controllers
+- View and view controller code.
+
+Managers
+- Data model managers.
+
+Foundation
+- Basic client services.
+
+TKUtilities
+- Non-application specific utilties
+
+

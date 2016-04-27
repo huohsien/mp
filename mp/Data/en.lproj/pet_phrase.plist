@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<array>
+	<string>I’m late.  I’ll be there in a little bit.</string>
+	<string>I’m a little busy now.  I’ll get back to you soon.</string>
+	<string>Where are you?</string>
+	<string>Can you give me a call?</string>
+	<string>Are you available now?</string>
+</array>
+</plist>
